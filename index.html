@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOTOLAB – Photography Store Since 1991</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/fav-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/fav-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <i
+            class="bi bi-aperture me-1"
+            style="font-size: 1.5rem; vertical-align: middle"
+          ></i>
+          FOTO<span>LAB</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home"
+                ><i class="bi bi-house me-1"></i>Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#products"
+                data-bs-toggle="dropdown"
+                role="button"
+              >
+                <i class="bi bi-grid me-1"></i>Products
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#products"
+                    onclick="filterCategory('cameras')"
+                  >
+                    <i class="bi bi-camera-fill me-2 text-accent"></i>Cameras</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#products"
+                    onclick="filterCategory('lenses')"
+                  >
+                    <i class="bi bi-circle-half me-2 text-accent"></i>Camera
+                    Lenses</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#products"
+                    onclick="filterCategory('audio')"
+                  >
+                    <i class="bi bi-mic-fill me-2 text-accent"></i>Pro Audio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#products"
+                    onclick="filterCategory('memory')"
+                  >
+                    <i class="bi bi-sd-card-fill me-2 text-accent"></i>Memory
+                    Cards & Media</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#products"
+                    onclick="filterCategory('tripods')"
+                  >
+                    <i class="bi bi-distribute-vertical me-2 text-accent"></i
+                    >Tripods & Supports</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#products"
+                    onclick="filterCategory('lighting')"
+                  >
+                    <i class="bi bi-lightbulb-fill me-2 text-accent"></i
+                    >Lighting & Studio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#products"
+                    onclick="filterCategory('bags')"
+                  >
+                    <i class="bi bi-bag-fill me-2 text-accent"></i>Camera Bags &
+                    Cases</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#products"
+                    onclick="filterCategory('misc')"
+                  >
+                    <i class="bi bi-puzzle-fill me-2 text-accent"></i>Misc
+                    Accessories</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"
+                ><i class="bi bi-info-circle me-1"></i>About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                ><i class="bi bi-telephone me-1"></i>Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" style="padding: 0">
+      <div
+        id="heroCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hero-slide slide-1">
+              <div class="container">
+                <div class="hero-content">
+                  <span class="hero-eyebrow"
+                    ><i class="bi bi-award me-2"></i>Est. 2000 · Photography
+                    Experts</span
+                  >
+                  <h1 class="hero-title">
+                    Capture Every<br /><span>Perfect Moment</span>
+                  </h1>
+                  <p class="hero-desc">
+                    Premium cameras, lenses and accessories from the world's
+                    leading brands. Expert advice, unmatched selection.
+                  </p>
+                  <div class="d-flex gap-3 flex-wrap">
+                    <a href="#products" class="btn-accent"
+                      ><i class="bi bi-bag me-2"></i>Shop Now</a
+                    >
+                    <a href="#about" class="btn-outline-accent"
+                      ><i class="bi bi-info-circle me-2"></i>Our Story</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="hero-slide slide-2">
+              <div class="container">
+                <div class="hero-content">
+                  <span class="hero-eyebrow"
+                    ><i class="bi bi-stars me-2"></i>New Arrivals 2024</span
+                  >
+                  <h1 class="hero-title">
+                    Pro Gear for<br /><span>Serious Shooters</span>
+                  </h1>
+                  <p class="hero-desc">
+                    From DSLR to mirrorless, handycams to studio lighting —
+                    everything a professional photographer needs under one roof.
+                  </p>
+                  <div class="d-flex gap-3 flex-wrap">
+                    <a href="#products" class="btn-accent"
+                      ><i class="bi bi-grid me-2"></i>Explore Products</a
+                    >
+                    <a href="#contact" class="btn-outline-accent"
+                      ><i class="bi bi-geo-alt me-2"></i>Find Our Store</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <section id="categories">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Shop by <span>Category</span></h2>
+          <div class="accent-line mx-auto"></div>
+          <p class="section-subtitle">Click any category to browse products</p>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="cat-card fade-in" onclick="filterCategory('cameras')">
+              <div class="cat-icon-wrap">
+                <i class="bi bi-camera-fill"></i>
+              </div>
+              <h6>Cameras</h6>
+              <small>DSLR · Mirrorless · Film</small>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="cat-card fade-in" onclick="filterCategory('lenses')">
+              <div class="cat-icon-wrap">
+                <i class="bi bi-circle-half"></i>
+              </div>
+              <h6>Lenses</h6>
+              <small>Prime · Zoom · Macro</small>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="cat-card fade-in" onclick="filterCategory('audio')">
+              <div class="cat-icon-wrap">
+                <i class="bi bi-mic-fill"></i>
+              </div>
+              <h6>Pro Audio</h6>
+              <small>Mics · Recorders · Mixers</small>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="cat-card fade-in" onclick="filterCategory('memory')">
+              <div class="cat-icon-wrap">
+                <i class="bi bi-sd-card-fill"></i>
+              </div>
+              <h6>Memory Cards</h6>
+              <small>SD · CF · USB</small>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="cat-card fade-in" onclick="filterCategory('tripods')">
+              <div class="cat-icon-wrap">
+                <i class="bi bi-distribute-vertical"></i>
+              </div>
+              <h6>Tripods</h6>
+              <small>Monopods · Heads · Clamps</small>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="cat-card fade-in" onclick="filterCategory('lighting')">
+              <div class="cat-icon-wrap">
+                <i class="bi bi-lightbulb-fill"></i>
+              </div>
+              <h6>Lighting & Studio</h6>
+              <small>Flashes · Softboxes · LEDs</small>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="cat-card fade-in" onclick="filterCategory('bags')">
+              <div class="cat-icon-wrap">
+                <i class="bi bi-bag-fill"></i>
+              </div>
+              <h6>Camera Bags</h6>
+              <small>Backpacks · Cases · Straps</small>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="cat-card fade-in" onclick="filterCategory('misc')">
+              <div class="cat-icon-wrap">
+                <i class="bi bi-puzzle-fill"></i>
+              </div>
+              <h6>Misc Accessories</h6>
+              <small>Filters · Batteries · More</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <div class="text-center mb-2">
+          <h2 class="section-title">Our <span>Products</span></h2>
+          <div class="accent-line mx-auto"></div>
+          <p class="section-subtitle">
+            Filter by category or brand · Check boxes to compare up to 4
+            products
+          </p>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2 mb-3" id="catTabs">
+          <button
+            class="cat-tab-btn active"
+            onclick="filterCategory('all', this)"
+          >
+            <i class="bi bi-grid-fill me-1"></i>All
+          </button>
+          <button class="cat-tab-btn" onclick="filterCategory('cameras', this)">
+            <i class="bi bi-camera-fill me-1"></i>Cameras
+          </button>
+          <button class="cat-tab-btn" onclick="filterCategory('lenses', this)">
+            <i class="bi bi-circle-half me-1"></i>Lenses
+          </button>
+          <button class="cat-tab-btn" onclick="filterCategory('audio', this)">
+            <i class="bi bi-mic-fill me-1"></i>Pro Audio
+          </button>
+          <button class="cat-tab-btn" onclick="filterCategory('memory', this)">
+            <i class="bi bi-sd-card-fill me-1"></i>Memory
+          </button>
+          <button class="cat-tab-btn" onclick="filterCategory('tripods', this)">
+            <i class="bi bi-distribute-vertical me-1"></i>Tripods
+          </button>
+          <button
+            class="cat-tab-btn"
+            onclick="filterCategory('lighting', this)"
+          >
+            <i class="bi bi-lightbulb-fill me-1"></i>Lighting
+          </button>
+          <button class="cat-tab-btn" onclick="filterCategory('bags', this)">
+            <i class="bi bi-bag-fill me-1"></i>Bags
+          </button>
+          <button class="cat-tab-btn" onclick="filterCategory('misc', this)">
+            <i class="bi bi-puzzle-fill me-1"></i>Misc
+          </button>
+        </div>
+
+        <div class="brand-filters" id="brandFilters">
+          <button class="brand-btn active" onclick="filterBrand('all', this)">
+            All Brands
+          </button>
+          <button class="brand-btn" onclick="filterBrand('canon', this)">
+            Canon
+          </button>
+          <button class="brand-btn" onclick="filterBrand('nikon', this)">
+            Nikon
+          </button>
+          <button class="brand-btn" onclick="filterBrand('sony', this)">
+            Sony
+          </button>
+          <button class="brand-btn" onclick="filterBrand('yashica', this)">
+            Yashica
+          </button>
+          <button class="brand-btn" onclick="filterBrand('fujifilm', this)">
+            Fujifilm
+          </button>
+          <button class="brand-btn" onclick="filterBrand('sandisk', this)">
+            SanDisk
+          </button>
+          <button class="brand-btn" onclick="filterBrand('manfrotto', this)">
+            Manfrotto
+          </button>
+          <button class="brand-btn" onclick="filterBrand('rode', this)">
+            Rode
+          </button>
+        </div>
+
+        <div class="row g-4" id="productGrid"></div>
+
+        <div
+          id="noResults"
+          class="text-center py-5"
+          style="display: none !important"
+        >
+          <i
+            class="bi bi-camera-video-off"
+            style="font-size: 3rem; color: var(--muted)"
+          ></i>
+          <p class="mt-3" style="color: var(--muted)">
+            No products found for this filter combination.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="row align-items-start g-5">
+          <div class="col-lg-6 fade-in">
+            <span
+              style="
+                font-size: 0.75rem;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                color: var(--main);
+              "
+            >
+              <i class="bi bi-camera me-2"></i>Our Story
+            </span>
+            <h2 class="section-title mt-2">About <span>FOTOLAB</span></h2>
+            <div class="accent-line"></div>
+            <p style="color: var(--muted); margin-bottom: 28px">
+              Established in
+              <strong style="color: var(--light)">1991</strong>, FOTOLAB has
+              been the trusted name for photography enthusiasts and
+              professionals. We carry Digital Cameras, SLR & DSLR Cameras,
+              Mirrorless Cameras, Handycams, and all their accessories.
+            </p>
+
+            <div class="why-item">
+              <div class="why-icon">
+                <i class="bi bi-person-check-fill"></i>
+              </div>
+              <div>
+                <h6>Expert Advice</h6>
+                <p>
+                  Our trained staff give undivided attention and expert analysis
+                  to every customer.
+                </p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon"><i class="bi bi-shield-check"></i></div>
+              <div>
+                <h6>Genuine Products</h6>
+                <p>
+                  All products are 100% authentic with manufacturer warranty and
+                  local support.
+                </p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon"><i class="bi bi-tools"></i></div>
+              <div>
+                <h6>Hardware & Software Support</h6>
+                <p>
+                  Comprehensive after-sales support including repairs and
+                  firmware updates.
+                </p>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn-accent mt-4 d-inline-block">
+              <i class="bi bi-shop me-2"></i>Visit Our Store
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-6">
+                <div
+                  class="about-stat"
+                  style="
+                    background: var(--dark);
+                    border: 1px solid var(--bdr);
+                    border-radius: 6px;
+                  "
+                >
+                  <i
+                    class="bi bi-calendar3"
+                    style="
+                      font-size: 1.8rem;
+                      color: var(--main);
+                      margin-bottom: 8px;
+                      display: block;
+                    "
+                  ></i>
+                  <div class="number">25+</div>
+                  <div class="label">Years in Business</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="about-stat"
+                  style="
+                    background: var(--dark);
+                    border: 1px solid var(--bdr);
+                    border-radius: 6px;
+                  "
+                >
+                  <i
+                    class="bi bi-tags-fill"
+                    style="
+                      font-size: 1.8rem;
+                      color: var(--main);
+                      margin-bottom: 8px;
+                      display: block;
+                    "
+                  ></i>
+                  <div class="number">50+</div>
+                  <div class="label">Brands Available</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="about-stat"
+                  style="
+                    background: var(--dark);
+                    border: 1px solid var(--bdr);
+                    border-radius: 6px;
+                  "
+                >
+                  <i
+                    class="bi bi-truck-flatbed"
+                    style="
+                      font-size: 1.8rem;
+                      color: var(--main);
+                      margin-bottom: 8px;
+                      display: block;
+                    "
+                  ></i>
+                  <div class="number">30-Day</div>
+                  <div class="label">Return Policy</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="about-stat"
+                  style="
+                    background: var(--dark);
+                    border: 1px solid var(--bdr);
+                    border-radius: 6px;
+                  "
+                >
+                  <i
+                    class="bi bi-hourglass-split"
+                    style="
+                      font-size: 1.8rem;
+                      color: var(--main);
+                      margin-bottom: 8px;
+                      display: block;
+                    "
+                  ></i>
+                  <div class="number">24/7</div>
+                  <div class="label">Customer Support</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="about-stat"
+                  style="
+                    background: var(--dark);
+                    border: 1px solid var(--bdr);
+                    border-radius: 6px;
+                  "
+                >
+                  <i
+                    class="bi bi-people-fill"
+                    style="
+                      font-size: 1.8rem;
+                      color: var(--main);
+                      margin-bottom: 8px;
+                      display: block;
+                    "
+                  ></i>
+                  <div class="number">5K+</div>
+                  <div class="label">Happy Customers</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="about-stat"
+                  style="
+                    background: var(--dark);
+                    border: 1px solid var(--bdr);
+                    border-radius: 6px;
+                  "
+                >
+                  <i
+                    class="bi bi-box-seam-fill"
+                    style="
+                      font-size: 1.8rem;
+                      color: var(--main);
+                      margin-bottom: 8px;
+                      display: block;
+                    "
+                  ></i>
+                  <div class="number">500+</div>
+                  <div class="label">Products in Stock</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Contact <span>Us</span></h2>
+          <div class="accent-line mx-auto"></div>
+          <p class="section-subtitle">
+            Visit us, call us, or drop us a message
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-5 fade-in">
+            <div class="contact-card">
+              <div class="contact-item">
+                <div class="ci-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <div class="label">Address</div>
+                  <div class="value">
+                    Shop 12, Photography Plaza,<br />Main Commercial Area,<br />Karachi,
+                    Pakistan
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="ci-icon"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <div class="label">Phone</div>
+                  <div class="value">+92 21 3456 7890</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="ci-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <div class="label">Email</div>
+                  <div class="value">
+                    <a href="mailto:info@fotolab.pk" class="text-accent">
+                      <i class="bi bi-send me-1"></i>info@fotolab.pk
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="ci-icon"><i class="bi bi-clock-fill"></i></div>
+                <div>
+                  <div class="label">Business Hours</div>
+                  <div class="value">
+                    Mon–Sat: 10:00 AM – 8:00 PM<br />Sunday: Closed
+                  </div>
+                </div>
+              </div>
+
+              <button id="geoBtn">
+                <i class="bi bi-crosshair"></i> Show My Location &amp; Get
+                Directions
+              </button>
+              <p
+                id="geoResult"
+                style="font-size: 0.8rem; color: var(--muted); margin-top: 10px"
+              ></p>
+            </div>
+          </div>
+
+          <div class="col-lg-7 fade-in">
+            <div id="mapContainer" class="mb-4">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.302320124079!2d67.01189607414071!3d24.85352214553751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e0ecfdf5d61%3A0x1717b3066d311922!2sDJ%20Sindh%20Govt.%20Science%20College!5e0!3m2!1sen!2s!4v1781260248046!5m2!1sen!2s"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div class="contact-card">
+              <h5
+                style="
+                  font-family: var(--disp);
+                  letter-spacing: 2px;
+                  margin-bottom: 24px;
+                  color: var(--main);
+                "
+              >
+                <i class="bi bi-chat-dots-fill me-2"></i>SEND A MESSAGE
+              </h5>
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <label class="form-label"
+                    ><i class="bi bi-person me-1"></i>Your Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="e.g. Ahmed Khan"
+                    id="cName"
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label"
+                    ><i class="bi bi-envelope me-1"></i>Email Address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="your@email.com"
+                    id="cEmail"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label"
+                  ><i class="bi bi-chat-text me-1"></i>Message</label
+                >
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="How can we help you?"
+                  id="cMsg"
+                ></textarea>
+              </div>
+              <button class="btn-accent w-100" onclick="sendMessage()">
+                <i class="bi bi-send me-2"></i>Send Message
+              </button>
+              <p
+                id="formSuccess"
+                style="
+                  display: none;
+                  color: var(--main);
+                  font-size: 0.85rem;
+                  margin-top: 12px;
+                "
+              >
+                <i class="bi bi-check-circle me-1"></i>Message sent! We'll get
+                back to you shortly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-brand">
+              <i class="bi bi-aperture me-1"></i>FOTO<span>LAB</span>
+            </div>
+            <p class="footer-tagline">
+              Your trusted photography partner since 1991.
+            </p>
+            <p
+              style="color: var(--muted); font-size: 0.83rem; margin-top: 14px"
+            >
+              Premium cameras, lenses & accessories — with expert advice every
+              step of the way.
+            </p>
+            <div class="d-flex gap-2 mt-3">
+              <a href="" class="social-icon" title="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="" class="social-icon" title="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="" class="social-icon" title="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="" class="social-icon" title="WhatsApp"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h6 class="footer-heading">Products</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="#products" onclick="filterCategory('cameras')"
+                  ><i class="bi bi-camera-fill"></i>Cameras</a
+                >
+              </li>
+              <li>
+                <a href="#products" onclick="filterCategory('lenses')"
+                  ><i class="bi bi-circle-half"></i>Lenses</a
+                >
+              </li>
+              <li>
+                <a href="#products" onclick="filterCategory('audio')"
+                  ><i class="bi bi-mic-fill"></i>Pro Audio</a
+                >
+              </li>
+              <li>
+                <a href="#products" onclick="filterCategory('memory')"
+                  ><i class="bi bi-sd-card-fill"></i>Memory Cards</a
+                >
+              </li>
+              <li>
+                <a href="#products" onclick="filterCategory('tripods')"
+                  ><i class="bi bi-distribute-vertical"></i>Tripods</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h6 class="footer-heading">More</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="#products" onclick="filterCategory('lighting')"
+                  ><i class="bi bi-lightbulb-fill"></i>Lighting</a
+                >
+              </li>
+              <li>
+                <a href="#products" onclick="filterCategory('bags')"
+                  ><i class="bi bi-bag-fill"></i>Camera Bags</a
+                >
+              </li>
+              <li>
+                <a href="#products" onclick="filterCategory('misc')"
+                  ><i class="bi bi-puzzle-fill"></i>Accessories</a
+                >
+              </li>
+              <li>
+                <a href="#about"><i class="bi bi-info-circle"></i>About Us</a>
+              </li>
+              <li>
+                <a href="#contact"><i class="bi bi-telephone"></i>Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h6 class="footer-heading">Brands We Carry</h6>
+            <div class="d-flex flex-wrap gap-2">
+              <span
+                style="
+                  background: var(--dark);
+                  border: 1px solid var(--bdr);
+                  color: var(--muted);
+                  font-size: 0.75rem;
+                  padding: 4px 10px;
+                  border-radius: 2px;
+                  letter-spacing: 1px;
+                "
+                >CANON</span
+              >
+              <span
+                style="
+                  background: var(--dark);
+                  border: 1px solid var(--bdr);
+                  color: var(--muted);
+                  font-size: 0.75rem;
+                  padding: 4px 10px;
+                  border-radius: 2px;
+                  letter-spacing: 1px;
+                "
+                >NIKON</span
+              >
+              <span
+                style="
+                  background: var(--dark);
+                  border: 1px solid var(--bdr);
+                  color: var(--muted);
+                  font-size: 0.75rem;
+                  padding: 4px 10px;
+                  border-radius: 2px;
+                  letter-spacing: 1px;
+                "
+                >SONY</span
+              >
+              <span
+                style="
+                  background: var(--dark);
+                  border: 1px solid var(--bdr);
+                  color: var(--muted);
+                  font-size: 0.75rem;
+                  padding: 4px 10px;
+                  border-radius: 2px;
+                  letter-spacing: 1px;
+                "
+                >YASHICA</span
+              >
+              <span
+                style="
+                  background: var(--dark);
+                  border: 1px solid var(--bdr);
+                  color: var(--muted);
+                  font-size: 0.75rem;
+                  padding: 4px 10px;
+                  border-radius: 2px;
+                  letter-spacing: 1px;
+                "
+                >FUJIFILM</span
+              >
+              <span
+                style="
+                  background: var(--dark);
+                  border: 1px solid var(--bdr);
+                  color: var(--muted);
+                  font-size: 0.75rem;
+                  padding: 4px 10px;
+                  border-radius: 2px;
+                  letter-spacing: 1px;
+                "
+                >SANDISK</span
+              >
+              <span
+                style="
+                  background: var(--dark);
+                  border: 1px solid var(--bdr);
+                  color: var(--muted);
+                  font-size: 0.75rem;
+                  padding: 4px 10px;
+                  border-radius: 2px;
+                  letter-spacing: 1px;
+                "
+                >MANFROTTO</span
+              >
+              <span
+                style="
+                  background: var(--dark);
+                  border: 1px solid var(--bdr);
+                  color: var(--muted);
+                  font-size: 0.75rem;
+                  padding: 4px 10px;
+                  border-radius: 2px;
+                  letter-spacing: 1px;
+                "
+                >RODE</span
+              >
+              <span
+                style="
+                  background: var(--dark);
+                  border: 1px solid var(--bdr);
+                  color: var(--muted);
+                  font-size: 0.75rem;
+                  padding: 4px 10px;
+                  border-radius: 2px;
+                  letter-spacing: 1px;
+                "
+                >GODOX</span
+              >
+              <span
+                style="
+                  background: var(--dark);
+                  border: 1px solid var(--bdr);
+                  color: var(--muted);
+                  font-size: 0.75rem;
+                  padding: 4px 10px;
+                  border-radius: 2px;
+                  letter-spacing: 1px;
+                "
+                >LOWEPRO</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom d-flex justify-content-between flex-wrap gap-2"
+        >
+          <span
+            ><i class="bi bi-c-circle me-1"></i>2025 FOTOLAB. All rights
+            reserved.</span
+          >
+          <span
+            ><i class="bi bi-calendar3 me-1"></i>Established 2000 · Karachi,
+            Pakistan</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <div id="compareBar">
+      <div class="compare-items-list" id="compareItemsList"></div>
+      <div class="d-flex gap-2 flex-shrink-0">
+        <button class="btn-accent" onclick="openCompareModal()">
+          <i class="bi bi-bar-chart-steps me-1"></i>Compare
+        </button>
+        <button class="btn-sm-ghost" onclick="clearAllCompare()">
+          <i class="bi bi-x-circle me-1"></i>Clear All
+        </button>
+      </div>
+    </div>
+
+    <button
+      id="backToTop"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <div class="modal fade" id="productModal" tabindex="-1">
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Product Name</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body" id="modalBody"></div>
+          <div class="modal-footer" style="border-top: 1px solid var(--bdr)">
+            <a id="modalDownloadLink" href="#" class="btn-accent" download>
+              <i class="bi bi-file-earmark-word me-1"></i>Download Full Specs
+              (.docx)
+            </a>
+            <button type="button" class="btn-sm-ghost" data-bs-dismiss="modal">
+              <i class="bi bi-x me-1"></i>Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="compareModal" tabindex="-1">
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <i class="bi bi-bar-chart-steps me-2"></i>Product Comparison
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body" style="overflow-x: auto">
+            <table id="compareTable"></table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
