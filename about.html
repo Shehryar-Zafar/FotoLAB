@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FOTOLAB – Photography Store Since 1991</title>
+  <title>About Us – FOTOLAB</title>
   <link rel="shortcut icon" href="assets/images/fav-icon.png" type="image/x-icon" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,6 +13,7 @@
 </head>
 <body>
 
+  
   <nav class="navbar navbar-expand-lg" id="mainNavbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -24,9 +25,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html"><i class="bi bi-house me-1"></i>Home</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-1"></i>Home</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="products.html" data-bs-toggle="dropdown" role="button">
               <i class="bi bi-grid me-1"></i>Products
@@ -42,149 +41,108 @@
               <li><a class="dropdown-item" href="products.html?cat=misc"><i class="bi bi-puzzle-fill me-2 text-accent"></i>Misc Accessories</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html"><i class="bi bi-info-circle me-1"></i>About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html"><i class="bi bi-telephone me-1"></i>Contact Us</a>
-          </li>
+          <li class="nav-item"><a class="nav-link active" href="about.html"><i class="bi bi-info-circle me-1"></i>About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-telephone me-1"></i>Contact Us</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
- 
-  <section style="padding:0">
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-      </div>
 
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="hero-slide slide-1">
-            <div class="container">
-              <div class="hero-content">
-                <span class="hero-eyebrow"><i class="bi bi-award me-2"></i>Est. 2000 · Photography Experts</span>
-                <h1 class="hero-title">Capture Every<br /><span>Perfect Moment</span></h1>
-                <p class="hero-desc">Premium cameras, lenses and accessories from the world's leading brands. Expert advice, unmatched selection.</p>
-                <div class="d-flex gap-3 flex-wrap">
-                  <a href="products.html" class="btn-accent"><i class="bi bi-bag me-2"></i>Shop Now</a>
-                  <a href="about.html" class="btn-outline-accent"><i class="bi bi-info-circle me-2"></i>Our Story</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="hero-slide slide-2">
-            <div class="container">
-              <div class="hero-content">
-                <span class="hero-eyebrow"><i class="bi bi-stars me-2"></i>New Arrivals 2024</span>
-                <h1 class="hero-title">Pro Gear for<br /><span>Serious Shooters</span></h1>
-                <p class="hero-desc">From DSLR to mirrorless, handycams to studio lighting — everything a professional photographer needs under one roof.</p>
-                <div class="d-flex gap-3 flex-wrap">
-                  <a href="products.html" class="btn-accent"><i class="bi bi-grid me-2"></i>Explore Products</a>
-                  <a href="contact.html" class="btn-outline-accent"><i class="bi bi-geo-alt me-2"></i>Find Our Store</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-  </section>
-
- 
-  <section id="categories">
+  <div style="background:var(--mid);padding:40px 0 30px;border-bottom:1px solid var(--bdr);">
     <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="section-title">Shop by <span>Category</span></h2>
-        <div class="accent-line mx-auto"></div>
-        <p class="section-subtitle">Click any category to browse products</p>
-      </div>
+      <h1 class="section-title mb-1">About <span>FOTOLAB</span></h1>
+      <div class="accent-line"></div>
+      <p class="section-subtitle mb-0">Our story, values, and why photographers trust us since 1991</p>
+    </div>
+  </div>
 
-      <div class="row g-3">
-        <div class="col-6 col-sm-4 col-md-3">
-          <a href="products.html?cat=cameras" class="text-decoration-none">
-            <div class="cat-card fade-in">
-              <div class="cat-icon-wrap"><i class="bi bi-camera-fill"></i></div>
-              <h6>Cameras</h6>
-              <small>DSLR · Mirrorless · Film</small>
+ 
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-start g-5">
+        <div class="col-lg-6 fade-in">
+          <span style="font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--main);">
+            <i class="bi bi-camera me-2"></i>Our Story
+          </span>
+          <h2 class="section-title mt-2">Why Choose <span>Us</span></h2>
+          <div class="accent-line"></div>
+          <p style="color:var(--muted);margin-bottom:28px;">
+            Established in <strong style="color:var(--light)">1991</strong>, FOTOLAB has been the trusted name for photography enthusiasts and professionals. We carry Digital Cameras, SLR & DSLR Cameras, Mirrorless Cameras, Handycams, and all their accessories.
+          </p>
+
+          <div class="why-item">
+            <div class="why-icon"><i class="bi bi-person-check-fill"></i></div>
+            <div>
+              <h6>Expert Advice</h6>
+              <p>Our trained staff give undivided attention and expert analysis to every customer.</p>
             </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon"><i class="bi bi-shield-check"></i></div>
+            <div>
+              <h6>Genuine Products</h6>
+              <p>All products are 100% authentic with manufacturer warranty and local support.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon"><i class="bi bi-tools"></i></div>
+            <div>
+              <h6>Hardware & Software Support</h6>
+              <p>Comprehensive after-sales support including repairs and firmware updates.</p>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn-accent mt-4 d-inline-block">
+            <i class="bi bi-shop me-2"></i>Visit Our Store
           </a>
         </div>
-        <div class="col-6 col-sm-4 col-md-3">
-          <a href="products.html?cat=lenses" class="text-decoration-none">
-            <div class="cat-card fade-in">
-              <div class="cat-icon-wrap"><i class="bi bi-circle-half"></i></div>
-              <h6>Lenses</h6>
-              <small>Prime · Zoom · Macro</small>
+
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="about-stat" style="background:var(--dark);border:1px solid var(--bdr);border-radius:6px;">
+                <i class="bi bi-calendar3" style="font-size:1.8rem;color:var(--main);margin-bottom:8px;display:block;"></i>
+                <div class="number">25+</div>
+                <div class="label">Years in Business</div>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3">
-          <a href="products.html?cat=audio" class="text-decoration-none">
-            <div class="cat-card fade-in">
-              <div class="cat-icon-wrap"><i class="bi bi-mic-fill"></i></div>
-              <h6>Pro Audio</h6>
-              <small>Mics · Recorders · Mixers</small>
+            <div class="col-6">
+              <div class="about-stat" style="background:var(--dark);border:1px solid var(--bdr);border-radius:6px;">
+                <i class="bi bi-tags-fill" style="font-size:1.8rem;color:var(--main);margin-bottom:8px;display:block;"></i>
+                <div class="number">50+</div>
+                <div class="label">Genuine Brands Available</div>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3">
-          <a href="products.html?cat=memory" class="text-decoration-none">
-            <div class="cat-card fade-in">
-              <div class="cat-icon-wrap"><i class="bi bi-sd-card-fill"></i></div>
-              <h6>Memory Cards</h6>
-              <small>SD · CF · USB</small>
+            <div class="col-6">
+              <div class="about-stat" style="background:var(--dark);border:1px solid var(--bdr);border-radius:6px;">
+                <i class="bi bi-truck-flatbed" style="font-size:1.8rem;color:var(--main);margin-bottom:8px;display:block;"></i>
+                <div class="number">30-Day</div>
+                <div class="label">Risk Free Return Policy</div>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3">
-          <a href="products.html?cat=tripods" class="text-decoration-none">
-            <div class="cat-card fade-in">
-              <div class="cat-icon-wrap"><i class="bi bi-distribute-vertical"></i></div>
-              <h6>Tripods</h6>
-              <small>Monopods · Heads · Clamps</small>
+            <div class="col-6">
+              <div class="about-stat" style="background:var(--dark);border:1px solid var(--bdr);border-radius:6px;">
+                <i class="bi bi-hourglass-split" style="font-size:1.8rem;color:var(--main);margin-bottom:8px;display:block;"></i>
+                <div class="number">24/7</div>
+                <div class="label">Customer Support</div>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3">
-          <a href="products.html?cat=lighting" class="text-decoration-none">
-            <div class="cat-card fade-in">
-              <div class="cat-icon-wrap"><i class="bi bi-lightbulb-fill"></i></div>
-              <h6>Lighting & Studio</h6>
-              <small>Flashes · Softboxes</small>
+            <div class="col-6">
+              <div class="about-stat" style="background:var(--dark);border:1px solid var(--bdr);border-radius:6px;">
+                <i class="bi bi-people-fill" style="font-size:1.8rem;color:var(--main);margin-bottom:8px;display:block;"></i>
+                <div class="number">5K+</div>
+                <div class="label">Satisfied Customers</div>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3">
-          <a href="products.html?cat=bags" class="text-decoration-none">
-            <div class="cat-card fade-in">
-              <div class="cat-icon-wrap"><i class="bi bi-bag-fill"></i></div>
-              <h6>Camera Bags</h6>
-              <small>Backpacks · Cases · Straps</small>
+            <div class="col-6">
+              <div class="about-stat" style="background:var(--dark);border:1px solid var(--bdr);border-radius:6px;">
+                <i class="bi bi-box-seam-fill" style="font-size:1.8rem;color:var(--main);margin-bottom:8px;display:block;"></i>
+                <div class="number">500+</div>
+                <div class="label">Products in Stock</div>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3">
-          <a href="products.html?cat=misc" class="text-decoration-none">
-            <div class="cat-card fade-in">
-              <div class="cat-icon-wrap"><i class="bi bi-puzzle-fill"></i></div>
-              <h6>Misc Accessories</h6>
-              <small>Filters · Batteries · More</small>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>
